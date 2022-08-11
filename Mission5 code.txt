@@ -1,1 +1,41 @@
 Mission5 code.txt
+
+// Author: RVGarcia
+// August 11, 2022
+public class Mission5 { 
+	
+    //new Method with List of numbers then iterate todetermine if each number is muliple by 3 and/or by 5. 
+    public static void NumberList(){
+        //Declare input number list
+		List<integer> input = new List<integer>();
+        
+        //Add required numbers
+        input.add(12);
+        input.add(20);
+        input.add(30);
+        input.add(17);
+    	//Iterateration using For loop to read each number in the input List
+        for (integer InputNumber :input) {
+  			
+            //Check if input number is multiple of 3 and 5  by using modulus math method       
+            if(((Math.Mod(InputNumber, 3) == 0) && (Math.Mod(InputNumber, 5)==0))
+                        ) {
+                            // if Multiple by 3 or 5  display the text 'DingDong'.
+                        	system.debug('The number is: ' + InputNumber + ' And the text is: DingDong');
+                        
+                            //Check if input number is multiple of 3 by using modulus math method
+                        } else if (Math.Mod(InputNumber, 3) == 0){
+							// if Multiple by 3 display 'Ding
+                            system.debug('The number is: ' + InputNumber + ' And the text is: Ding');
+                        }
+            
+            else if (Math.Mod(InputNumber, 5) == 0){
+                            system.debug('The number is: ' + InputNumber + ' And the text is: Dong');
+                        }
+			//display the input number if not multiple by 3 and/or 5
+            	else {                
+                        system.debug(InputNumber + ' <-- This number is not Multiple to 3 0r 5. ');  
+            }
+        } 
+        }
+    }
